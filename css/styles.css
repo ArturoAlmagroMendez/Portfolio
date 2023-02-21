@@ -15,7 +15,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #191c32;
-  color:#fff;
+  color: #fff;
 }
 
 
@@ -25,13 +25,15 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 2em;
-  font-size:20px;
-  
+  font-size: 20px;
+
 }
+
 .brand span {
   color: aqua;
 }
-.brand{
+
+.brand {
   margin-top: -7px;
 }
 
@@ -49,7 +51,7 @@ body {
 .menu a {
   color: #fff;
   text-decoration: none;
-  padding:10px 20px;
+  padding: 10px 20px;
 }
 
 .menu .active {
@@ -58,6 +60,82 @@ body {
 
 .menu a:hover {
   background-color: aqua;
-  color:#191c32;
+  color: #191c32;
   transition: ease-in .4s;
+}
+
+/* style main */
+.main {
+  margin: 0 10em;
+  width: 80 vw;
+  height: 80 vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+span {
+  color: aqua;
+}
+
+.download-cv {
+  padding: 10px 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+
+}
+
+.download-cv:hover {
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.main img {
+  width:350px;
+  height: 500px;
+  border: 7px solid aqua;
+
+}
+
+/*Style about me */
+.about {
+  display:grid;
+  grid-template-columns: repeat(10,1fr);
+  width: 100vw;
+  align-items:center;
+}
+
+.about img {
+  width:100%;
+  grid-column: 1/5;
+}
+
+.about-info{
+  grid-column: 5/10;
+  padding:3em;
+}
+
+.about-info h2{
+  font-size: 2.5em;
+  color: #191c32;
+}
+
+.divider{
+  height: 8px;
+  width: 140px;
+  background-color:aqua;
+  margin-top:8px;
+  margin-bottom: 2em;
+}
+
+.about p {
+  margin-bottom: 1em;
 }
