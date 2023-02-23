@@ -141,12 +141,13 @@ span {
 }
 
 /* Style portfolio */
-.portfolio{
-  width:100vw;
+.portfolio {
+  width: 100vw;
   background-color: #191c32;
-  color:#fff;
-  
+  color: #fff;
+
 }
+
 .portfolio-headings {
   width: 100%;
   padding: 5em;
@@ -166,11 +167,15 @@ span {
 
 .card {
   width: 300px;
-  height:480px;
+  height: 480px;
   /*background-color:#2b3058;*/
   background-color: rgb(39, 61, 160);
-  
+  margin: 1em;
+}
 
+.card__projects-links img {
+  height: 36px;
+  width: 36px;
 }
 
 .card__img {
@@ -208,9 +213,114 @@ span {
   font-size: 1.1em;
   text-transform: uppercase;
 }
+
 .proyects-details-content {
-  display:flex;
-  width:100%;
+  display: flex;
+  width: 100%;
   justify-content: center;
-  margin-top:1em;
+  margin-top: 1em;
+}
+
+.card__projects-links .github-icon:hover {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.card__projects-links .browser-icon:hover {
+  border: 3px solid #fff;
+  border-radius: 20px;
+}
+
+/*Style contact section */
+.contact-section {
+  background-color: #191c32;
+  color:#fff;
+  padding: 3em;
+}
+.contact-headings h2 {
+  font-size: 3em;
+}
+
+.container-contact {
+  padding: 3em;
+  margin: 0 auto;
+}
+
+.container-contact img {
+  width: 750px;
+  height: 600px;
+  bottom: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+
+.form input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+
+}
+
+.form textarea {
+  height:150px;
+  background: none;
+  color:#fff;
+  padding:1.5em;
+  border: 1px solid #fff;
+}
+
+.btn-submit{
+  padding:10px 20px;
+  margin:1em;
+  border:solid #fff 1px;
+  text-transform: uppercase;
+  background-color:#191c32;
+  border-radius:20px;
+  cursor:pointer;
+  /*box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69); */
+  border-color:#fff;
+  color:#fff;
+
+}
+.btn-submit:hover{
+  box-shadow: none;
+  background-color:aquamarine;
+  color:black;
+}
+
+/*Style footer */
+.footer{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100vw;
+  height:180px;
+  background-color: aqua;
+}
+.footer-content h2{
+  font-size: 3em;
+ 
+}
+.footer-content h5{
+  font-size: 1.5em;
+  margin-left:100px;
+}
+.social-network{
+  display:flex;
+  justify-content: space-evenly;
+  width:300px;
+  margin-top: 1em;
+}
+.social-icon{
+  height:36px;
+  width:36px;
 }
