@@ -9,6 +9,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
+  
 }
 
 .wrapper {
@@ -96,7 +97,8 @@ h4 {
   color: aqua;
 }
 
-.download-cv {
+.download-cv,
+.project-details {
   padding: 10px 20px;
   background-color: aqua;
   border: none;
@@ -107,10 +109,12 @@ h4 {
 
 }
 
-.download-cv:hover {
+.download-cv:hover,
+.project-details:hover {
   background-color: #fff;
   box-shadow: none;
 }
+
 
 .main img {
   width: 350px;
@@ -142,21 +146,28 @@ h4 {
   font-size: 2.5em;
   color: #191c32;
 }
+.about-info p {
+  font-size: 1.2em;
+  color: #191c32;
+}
 
 .divider {
   height: 8px;
-  width: 140px;
+  width: 135px;
   background-color: aqua;
   margin-top: 8px;
   margin-bottom: 2em;
 }
-
-.about p {
-  margin-bottom: 1em;
+.readmore:hover{
+  background-color: #191c32;
+  color: #fff;
 }
 
+
+
 /* Style portfolio */
-.portfolio {
+.portfolio,
+.contact-section{
   width: 100vw;
   background-color: #191c32;
   color: #fff;
@@ -174,10 +185,10 @@ h4 {
 
 .portfolio .container {
   width: 80vw;
-  height: 80vh;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -236,13 +247,9 @@ h4 {
   margin-top: 1em;
 }
 
-.card__projects-links .github-icon:hover {
-  background-color: #fff;
-  border-radius: 20px;
-}
-
+.card__projects-links .github-icon:hover,
 .card__projects-links .browser-icon:hover {
-  border: 3px solid #fff;
+  background-color: #fff;
   border-radius: 20px;
 }
 
@@ -342,11 +349,14 @@ h4 {
   width: 300px;
   margin-top: 1em;
 }
-
-.social-icon {
-  height: 36px;
-  width: 36px;
+.social-network a i{
+  padding:10px;
 }
+.social-network a i:hover{
+  background-color: #fff;
+  border-radius:20px;
+}
+
 
 /*Media querys to make it responsive */
 
@@ -387,13 +397,9 @@ h4 {
     flex-direction: column-reverse;
   }
 
-  .info-content__p {
-    display: none;
-  }
-
   .main img {
     width: min(70%, 350px);
-    height: auto;
+    height:auto;
   }
 
   .info-content {
@@ -408,8 +414,12 @@ h4 {
     padding: 1em;
 
   }
-
-  .download-cv {
+  .download-cv{
+    margin-top: 30px;
+    font-size: 1em;
+  }
+  .contact-img
+  {
     display: none;
   }
 
@@ -417,5 +427,23 @@ h4 {
     display: block;
     margin-bottom:1.5em;
     margin-top:2.5em;
+  }
+  .container-contact{
+    padding:0;
+  }
+  .proyects-details-content{
+    margin-top:0;
+  }
+  .form{
+    width:80vw;
+  }
+  .footer h2{
+    font-size:2.5em;
+  }
+  .footer h5{
+    margin-left:60px;
+  }
+  .social-network{
+    font-size:2em;
   }
 }
