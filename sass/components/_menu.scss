@@ -1,0 +1,26 @@
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+  }
+  
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  .menu .active {
+    color: aqua;
+  }
+  
+  .menu a:hover {
+    background-color: aqua;
+    color: $primary-color;
+    transition: ease-in .4s;
+  }

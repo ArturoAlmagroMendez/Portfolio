@@ -1,0 +1,43 @@
+
+  h1 {
+    font-size: clamp(3vw, 1.5em, 3em);
+    margin:0;
+
+  }
+  
+  h4 {
+    color: aqua;
+    margin:0;
+
+  }
+  
+  .download-cv,
+  .project-details {
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+    font-weight: 600;
+  
+  }
+  
+  .download-cv:hover,
+  .project-details:hover {
+    background-color: #fff;
+    box-shadow: none;
+  }
+  .main .main-image{
+    width:50%;
+    
+      
+  }
+  .info-content{
+    width:50%;
+  }
+  .main .main-image img {
+    width:50%;
+    border: 7px solid aqua;
+  }

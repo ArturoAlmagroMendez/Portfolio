@@ -1,0 +1,41 @@
+.about {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  align-items: center;
+  background-color: #fff;
+}
+
+.about img {
+  width: 100%;
+  grid-column: 1/5;
+}
+
+.about-info {
+  grid-column: 5/10;
+  padding: 3em;
+}
+
+.about-info h2 {
+  font-size: 2.5em;
+  color: $primary-color;
+}
+.about-info p {
+  font-size: 1.2em;
+  color: $primary-color;
+}
+.divider {
+  height: 8px;
+  width: 135px;
+  background-color: aqua;
+  margin-top: 8px;
+  margin-bottom: 2em;
+}
+.readmore {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.readmore:hover {
+  background-color: $primary-color;
+  color: #fff;
+}
